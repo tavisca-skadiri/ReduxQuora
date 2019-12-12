@@ -10,6 +10,9 @@ export default class Comment extends Component {
             <span>{comment.commentText}</span>
             <AddComment onAddClick = {onAddClick} question={comment}/>
             <CommentList comments={comment.comments} onAddClick = {onAddClick}/>
+            {/* <span>Votes: {comment.votes}             </span>
+            <button onClick={()=>upvote(comment)}>Upvote</button>
+            <button onClick={()=>downvote(comment)}>Downvote</button> */}
          </li>
       )
    }

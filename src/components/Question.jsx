@@ -30,7 +30,7 @@ export default class Question extends Component {
             {/* <button onClick={this.toggleVisibility}></button>             */}
             {/* {this.state.visibility ? <AddComment onAddClick = {onAddClick} question={question}/>:null} */}
             <AddComment onAddClick = {onAddClick} question={question}/>
-            <CommentList comments={question.comments} onAddClick = {onAddClick}/>
+            <CommentList comments={question.comments} onAddClick = {onAddClick} upvote={upvote} downvote={downvote}/>
             <span>Votes: {question.votes}             </span>
             <button onClick={()=>upvote(question)}>Upvote</button>
             <button onClick={()=>downvote(question)}>Downvote</button>

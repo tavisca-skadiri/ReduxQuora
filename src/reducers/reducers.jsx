@@ -21,13 +21,15 @@ function questions(state = [], action) {
          }
          action.question.comments.push(comment);
          return [...state]
+         
       case 'UPVOTE':
-         console.log(action.question);
          action.question.votes += 1
          return [...state]
+
       case 'DOWNVOTE':
          action.question.votes -= 1
          return [...state]
+
       default:
          return state
    }
